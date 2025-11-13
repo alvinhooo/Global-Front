@@ -1,12 +1,15 @@
 import { useEffect, useState } from 'react'
 import { api } from '../services/api'
-import type { Mood } from '../types/types';
+import type { Mood, MoodRecord } from '../types/types';
 
 export default function MoodHistory() {
-  const userId = 1;
-  const [records, setRecords] = useState<any[]>([])
+  const userId = 1
+  const [records, setRecords] = useState<MoodRecord[]>([])
   const [mood, setMood] = useState<Mood>('Neutro')
   const [note, setNote] = useState('')
+  const [date, setDate] = useState(() =>
+    new Date().toISOString().split('T')[0]
+  )
 
   useEffect(() => {
     api.getMoodRecords(userId)
@@ -16,7 +19,7 @@ export default function MoodHistory() {
 
   async function save() {
     try {
-      await api.postMoodRecord(userId, { mood, note })
+      await api.postMoodRecord(userId, { mood, note, date })
       const updated = await api.getMoodRecords(userId)
       setRecords(updated)
       setNote('')
@@ -29,18 +32,39 @@ export default function MoodHistory() {
     <div>
       <h1 className="text-2xl font-bold mb-4">Registrar humor</h1>
       <div className="p-4 bg-white dark:bg-gray-800 rounded shadow space-y-3">
-        <select value={mood}  onChange={e => setMood(e.target.value as Mood)} className="p-2 rounded bg-gray-100 dark:bg-gray-700">
-          <option>Cansado</option>
-          <option>Motivado</option>
-          <option>Ansioso</option>
-          <option>Neutro</option>
-          <option>Estressado</option>
-        </select>
 
-        <textarea value={note} onChange={e => setNote(e.target.value)} placeholder="Observações (opcional)"
-        className="w-full p-2 rounded bg-gray-100 dark:bg-gray-700"/>
+        <div className="flex gap-3">
+          <select
+            value={mood}
+            onChange={e => setMood(e.target.value as Mood)}
+            className="p-2 rounded bg-gray-100 dark:bg-gray-700 flex-1"
+          >
+            <option>Cansado</option>
+            <option>Motivado</option>
+            <option>Ansioso</option>
+            <option>Neutro</option>
+            <option>Estressado</option>
+          </select>
 
-        <button onClick={save} className="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition">
+          <input
+            type="date"
+            value={date}
+            onChange={e => setDate(e.target.value)}
+            className="p-2 rounded bg-gray-100 dark:bg-gray-700"
+          />
+        </div>
+
+        <textarea
+          value={note}
+          onChange={e => setNote(e.target.value)}
+          placeholder="Observações (opcional)"
+          className="w-full p-2 rounded bg-gray-100 dark:bg-gray-700"
+        />
+
+        <button
+          onClick={save}
+          className="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition"
+        >
           Salvar
         </button>
       </div>
@@ -61,14 +85,19 @@ export default function MoodHistory() {
       </div>
 
       <div className="flex justify-center gap-4 mt-8">
-        <a href="/dashboard" className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-900 transition">
+        <a
+          href="/dashboard"
+          className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-900 transition"
+        >
           Voltar para Dashboard
         </a>
 
-        <a href="/" className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-900 transition">
+        <a
+          href="/"
+          className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-900 transition"
+        >
           Ir para Home
         </a>
-
       </div>
     </div>
   )

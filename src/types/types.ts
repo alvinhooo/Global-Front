@@ -8,4 +8,23 @@ export type User = {
   linkedin?: string
 }
 
-export type Mood = 'Cansado' | 'Motivado' | 'Ansioso' | 'Neutro' | 'Estressado'
+export type Mood =
+  'Cansado' |
+  'Motivado' |
+  'Ansioso' |
+  'Neutro' |
+  'Estressado'
+
+export type MoodRecordInput = {
+  mood: Mood
+  note?: string
+  date: string
+}
+
+
+export type MoodRecord = {
+  id: number
+  mood: Mood
+  note?: string
+  date: string
+}
