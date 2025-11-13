@@ -22,7 +22,7 @@ GitHub: [@vderoldo7](https://github.com/vderoldo7)
 LinkedIn: [Vitor Deroldo](https://www.linkedin.com/in/vitor-deroldo/)
 
 **Rafael Pascotte Mercadante** – Desenvolvedor Back-End  
-GitHub: [@RPascotte15](https://github.com/RPascotte15)  
+GitHub: [@RPascotte15](https://github.com/pascotterafaaa)  
 LinkedIn: [Rafael Pascotte Mercadante](https://www.linkedin.com/in/rafael-pascotte-mercadante-6a5405196/)
 
 ---
