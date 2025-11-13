@@ -227,4 +227,5 @@ Este projeto foi desenvolvido para fins educacionais como parte do curso de Tecn
 Desenvolvido com ❤️ para a saúde e o bem-estar.
 
 
-[🧠 MindLink] | [📧 Contato] | [💼 Bem-Estar no Trabalho]
+[🧠 MindLink] | [📧 Contato] 
+(11) 229885703
