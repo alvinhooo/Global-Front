@@ -15,15 +15,15 @@ O sistema permite registrar o humor diário, visualizar gráficos de bem-estar e
 
 **Álvaro Freitas Miranda** – Desenvolvedor Back-End  
 GitHub: [@alvinhooo](https://github.com/alvinhooo)  
-LinkedIn: [Álvaro Freitas Miranda](https://www.linkedin.com/in/álvaro-freitas-miranda)
+LinkedIn: [Álvaro Freitas Miranda](https://www.linkedin.com/in/%C3%A1lvaro-miranda-a71783314/)
 
 **Vitor Viana Carneiro Deroldo** – Desenvolvedor Back-End  
 GitHub: [@vderoldo7](https://github.com/vderoldo7)  
-LinkedIn: [Vitor Deroldo](https://www.linkedin.com/in/vitor-deroldo)
+LinkedIn: [Vitor Deroldo](https://www.linkedin.com/in/vitor-deroldo/)
 
 **Rafael Pascotte Mercadante** – Desenvolvedor Back-End  
-GitHub: [@RPascotte15](https://github.com/RPascotte15)  
-LinkedIn: [Rafael Pascotte Mercadante](https://www.linkedin.com/in/rafael-pascotte-mercadante)
+GitHub: [@RPascotte15](https://github.com/pascotterafaaa)  
+LinkedIn: [Rafael Pascotte Mercadante](https://www.linkedin.com/in/rafael-pascotte-mercadante-6a5405196/)
 
 ---
 
@@ -163,7 +163,7 @@ npm install
 
 # Executando o programa
 npm run dev
-
+```
 
 🎨 Conceitos Implementados
 
