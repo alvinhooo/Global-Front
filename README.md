@@ -163,7 +163,7 @@ npm install
 
 # Executando o programa
 npm run dev
-
+```
 
 🎨 Conceitos Implementados
 
