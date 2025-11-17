@@ -2,7 +2,10 @@ const suggestions = [
   { when: 'Cansado', text: 'Faça uma pausa de 10 minutos e caminhe um pouco; hidrate-se.' },
   { when: 'Ansioso', text: 'Respire profundamente por 5 minutos ou experimente 2 minutos de mindfulness.' },
   { when: 'Motivado', text: 'Ótimo! Anote suas tarefas mais importantes e aproveite o momento.' },
+  { when: 'Estressado', text: 'Tente alongar o pescoço e os ombros por 2 minutos e organize suas prioridades.' },
+  { when: 'Neutro', text: 'Que tal fazer algo leve para melhorar seu dia, como ouvir uma música que você gosta?' },
 ]
+
 
 export default function Sugestoes() {
   return (
