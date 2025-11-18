@@ -43,7 +43,7 @@ Turma: **1TDSPI**
 [https://github.com/Challenge-Fiap-2025/SprintFront04](https://github.com/Challenge-Fiap-2025/SprintFront04)
 
 ## 🌐 Deploy no Vercel
-<link target= "_blank">[Deploy no vercel](https://global-front-one.vercel.app/)<liink/>
+[Deploy no vercel](https://global-front-one.vercel.app/)
 
 ---
 
