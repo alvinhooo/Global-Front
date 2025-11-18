@@ -6,13 +6,13 @@ import Home from './pages/Home'
 import About from './pages/Sobre'
 import Contact from './pages/Contato'
 import FAQ from './pages/Faq'
-//import Integrantes from './pages/Integrantes'
-//import IntegrantePerfil from './pages/IntegrantePerfil'
 import Login from './pages/Login'
 import Dashboard from './pages/Dashboard'
 import MoodHistory from './pages/MoodHistory'
 import Suggestions from './pages/Sugestoes'
 import Integrantes from './pages/Integrantes'
+
+//import DarkModeToggle from './components/DarkModeToggle'
 
 export default function App() {
   return (
