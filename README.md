@@ -37,13 +37,13 @@ Turma: **1TDSPI**
 ---
 
 ## 🎥 Vídeo de Apresentação
-[Assista no YouTube](https://youtu.be/RLw0At3wVt8)
+[Assista no YouTube](https://youtu.be/iOQQeSrnVYc)
 
 ## 💻 Repositório GitHub
 [https://github.com/Challenge-Fiap-2025/SprintFront04](https://github.com/Challenge-Fiap-2025/SprintFront04)
 
 ## 🌐 Deploy no Vercel
-[https://global-front-one.vercel.app/](https://global-front-one.vercel.app/)
+[Deploy no vercel](https://global-front-one.vercel.app/)
 
 ---
 
